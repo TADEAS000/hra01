@@ -513,26 +513,45 @@ buySeed.onclick = () => {
     }, 1000)
    }
   }
-if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing1 == 30) {
-    harvest1.style.display = "block"
-}
-if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing2 == 30) {
-  harvest2.style.display = "block"
-}
-if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing3 == 30) {
-harvest3.style.display = "block"
-}
-if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing4 == 30) {
-harvest4.style.display = "block"
-}
-if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing5 == 30) {
-harvest5.style.display = "block"
-}
-if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing6 == 30) {
-harvest6.style.display = "block"
-}
-if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing7 == 30) {
-harvest7.style.display = "block"
+
+window.onload = () =>{
+    setInterval(() =>{
+        if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing1 == 30) {
+            harvest1.style.display = "block"
+            progress1.style.display = "none"
+            progressThing1 -= progressThing1;
+        }
+        if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing2 == 30) {
+          harvest2.style.display = "block"
+          progress2.style.display = "none"
+            progressThing2 -= progressThing2;
+        }
+        if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing3 == 30) {
+        harvest3.style.display = "block"
+        progress3.style.display = "none"
+            progressThing3 -= progressThing3;
+        }
+        if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing4 == 30) {
+        harvest4.style.display = "block"
+        progress4.style.display = "none"
+            progressThing4 -= progressThing4;
+        }
+        if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing5 == 30) {
+        harvest5.style.display = "block"
+        progress5.style.display = "none"
+            progressThing5 -= progressThing5;
+        }
+        if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing6 == 30) {
+        harvest6.style.display = "block"
+        progress6.style.display = "none"
+            progressThing6 -= progressThing6;
+        }
+        if (document.body.style.backgroundImage = "url(./res/img/weedroom.png)" && progressThing7 == 30) {
+        harvest7.style.display = "block"
+        progress7.style.display = "none"
+            progressThing7 -= progressThing7;
+        } 
+    },1)
 }  
 if (document.body.style.backgroundImage != "url(./res/img/weedroom.png)" && progressThing1 == 30) {
       harvest1.style.display = "none"
